@@ -1,0 +1,175 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Set neon color */
+  --neon-text-color: #f40;
+  --neon-border-color: #08f;
+}
+
+body {
+  background-color: #00171F;
+  color: #FDFEFF;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p:hover {
+  transition: box-shadow 1s, transform 2s;
+  box-shadow:
+    1px 1px #53a7ea,
+    2px 2px #53a7ea,
+    3px 3px #53a7ea;
+  transform: translateX(-3px);
+}
+
+h3:hover {
+  transition: box-shadow 1s, transform 2s;
+  box-shadow:
+    1px 1px #53a7ea,
+    2px 2px #53a7ea,
+    3px 3px #53a7ea;
+  transform: translateX(-3px);
+}
+
+.orderButton {
+  background-color: #DB9D47;
+  border: 2px;
+  color: white;
+  padding-left: 15px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.bannerButtons {
+  text-transform: uppercase;
+  background-color: #DB9D47;
+  font-size: 16px;
+  color: white;
+  border: none;
+  width: 200px;
+  height: 50px;
+  border: 10px;
+  border-color: black;
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.bannerButtons:hover {
+  transform: scale(1.2);
+  background-color: #2274A5;
+}
+
+#neon {
+  font-family: 'Exo 2', sans-serif;
+  margin-top: 15vh;
+  height: 250px;
+  width: 640px;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+  margin-bottom: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 200;
+  font-style: italic;
+  color: #fff;
+  padding: 4rem 6rem 5.5rem;
+  border: 0.4rem solid #fff;
+  border-radius: 2rem;
+  animation: flicker 3.5s infinite alternate;
+  transition: transform 4s;
+}
+
+#neon:hover {
+  transform: rotate(360deg);
+}
+
+/* Animate neon flicker */
+@keyframes flicker {
+
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+
+    text-shadow:
+      -0.2rem -0.2rem 1rem #fff,
+      0.2rem 0.2rem 1rem #fff,
+      0 0 2rem var(--neon-text-color),
+      0 0 4rem var(--neon-text-color),
+      0 0 6rem var(--neon-text-color),
+      0 0 8rem var(--neon-text-color),
+      0 0 10rem var(--neon-text-color);
+
+    box-shadow:
+      0 0 .5rem #fff,
+      inset 0 0 .5rem #fff,
+      0 0 2rem var(--neon-border-color),
+      inset 0 0 2rem var(--neon-border-color),
+      0 0 4rem var(--neon-border-color),
+      inset 0 0 4rem var(--neon-border-color);
+  }
+
+  20%, 24%, 55% {
+    text-shadow: none;
+    box-shadow: none;
+  }
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #2274A5;
+  box-shadow: 0 4px 8px 0 #DB9D47;
+  transition: 0.3s;
+  border-radius: 5px;
+  padding-left: 8px;
+  transition: box-shadow 0.5s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 32px 0 #DB9D47;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}

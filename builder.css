@@ -1,0 +1,210 @@
+#pizza-container {
+    position: relative;
+    margin-top: 23vh;
+    margin-left: 15vw;
+}
+
+#base {
+    position: relative;
+    width: 40vw;
+    height: 40vw;
+    margin-right: 15vw;
+    float: right;
+    animation-name: spin;
+    animation-duration: 50000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+    input.top:not(:checked)~#img-roni, #img-saus, 
+    #img-bacon, #img-onion, #img-pine, #img-shroom,
+    #img-pepper, #img-tomatoes, #img-steak, 
+    #img-meatballs, #img-chicken, #img-jalapeno, 
+    #img-spinach, #img-anchovies {
+        display: none;
+    }
+
+    #input-roni:checked~#img-roni {
+        width: 42vw;
+        height: 42vw;
+        left: 28vw;
+        top: 0;
+        display: inline;
+        position: absolute;
+        animation-name: bounce;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+    }
+
+    #input-bacon:checked~#img-bacon {
+        width: 42vw;
+        height: 42vw;
+        left: 28vw;
+        top: 0;
+        display: inline;
+        position: absolute;
+        animation-name: bounce;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+    }
+
+    #input-saus:checked~#img-saus {
+        width: 42vw;
+        height: 42vw;
+        left: 28vw;
+        top: 0;
+        display: inline;
+        position: absolute;
+        animation-name: bounce;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+    }
+
+    #input-pine:checked~#img-pine {
+        width: 42vw;
+        height: 42vw;
+        left: 28vw;
+        top: 0;
+        display: inline;
+        position: absolute;
+        animation-name: bounce;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+    }
+
+    #input-shroom:checked~#img-shroom {
+        width: 42vw;
+        height: 42vw;
+        left: 28vw;
+        top: 0;
+        display: inline;
+        position: absolute;
+        animation-name: bounce;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+    }
+
+    #input-pepper:checked~#img-pepper {
+        width: 42vw;
+        height: 42vw;
+        left: 28vw;
+        top: 0;
+        display: inline;
+        position: absolute;
+        animation-name: bounce;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+    }
+
+    #input-onion:checked~#img-onion {
+        width: 42vw;
+        height: 42vw;
+        left: 28vw;
+        top: 0;
+        display: inline;
+        position: absolute;
+        animation-name: bounce;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+    }
+
+    #input-anchovies:checked~#img-anchovies {
+        width: 42vw;
+        height: 42vw;
+        left: 28vw;
+        top: 0;
+        display: inline;
+        position: absolute;
+        animation-name: bounce;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+    }
+
+    #input-spinach:checked~#img-spinach {
+        width: 42vw;
+        height: 42vw;
+        left: 28vw;
+        top: 0;
+        display: inline;
+        position: absolute;
+        animation-name: bounce;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+    }
+
+    #input-jalapeno:checked~#img-jalapeno {
+        width: 42vw;
+        height: 42vw;
+        left: 28vw;
+        top: 0;
+        display: inline;
+        position: absolute;
+        animation-name: bounce;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+    }
+
+    #input-chicken:checked~#img-chicken {
+        width: 42vw;
+        height: 42vw;
+        left: 28vw;
+        top: 0;
+        display: inline;
+        position: absolute;
+        animation-name: bounce;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+    }
+
+    #input-meatballs:checked~#img-meatballs {
+        width: 42vw;
+        height: 42vw;
+        left: 28vw;
+        top: 0;
+        display: inline;
+        position: absolute;
+        animation-name: bounce;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+    }
+
+    #input-steak:checked~#img-steak {
+        width: 42vw;
+        height: 42vw;
+        left: 28vw;
+        top: 0;
+        display: inline;
+        position: absolute;
+        animation-name: bounce;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+    }
+
+    #input-tomatoes:checked~#img-tomatoes {
+        width: 42vw;
+        height: 42vw;
+        left: 28vw;
+        top: 0;
+        display: inline;
+        position: absolute;
+        animation-name: bounce;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+    }
+
+    @keyframes bounce {
+        0% {transform: translateY(-200%);}
+        5% {transform: translateY(-200%);}
+        10% {transform: translateY(0%);}
+        25% {transform: translateY(-20%);}
+        40% {transform: translateY(0%);}
+        50% {transform: translateY(-5%);}
+        60% {transform: translateY(0%);}
+        80% {transform: translateY(0%);}
+        100% {transform: translateY(0%);}
+    }

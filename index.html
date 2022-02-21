@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Customizer</title>
+    <link rel="icon" type="image/x-icon" href="./img/pizza.png">
+    <link href="builder.css" rel="stylesheet">
+    <link href="home.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="orderButton">
+        <a href="#custom-container"><button class="bannerButtons">Build Your Own</button></a>
+        <a href="specialityPizza.html"><button class="bannerButtons">Speciality Pizzas</button></a>
+        <a href="deserts.html"><button class="bannerButtons">Desserts</button></a>
+        <a href="rewards.html"><button class="bannerButtons">Rewards</button></a>
+    </div>
+
+    <div id="neon">
+        <h1>PIZZA</h1>
+    </div>
+
+    <div class="ticker">
+        <h2> Combination Boxes</h2>
+    </div>
+
+    <div id="combos">
+        <img src="./img/pizzaComboA.png" class="comboGrow" alt="Combo A">
+        <img src="./img/pizzaComboB.png" class="comboGrow" alt="Combo B">
+        <img src="./img/pizzaComboC.png" class="comboGrow" alt="Combo C">
+        <img src="./img/pizzaComboD.png" class="comboGrow" alt="Combo D">
+        <img src="./img/kidsCombo.png" class="comboGrow" alt="Kids Combo A">
+    </div>
+
+    <div class="ticker">
+        <h2>Customize Pizza</h2>
+    </div>
+
+    <div id="custom-container">
+        <div class="card" id="crust">
+            <h3> Select Crust & Size</h3>
+            <input type="radio" value="smallcrust" name="crustSize">
+            <label>10"</label>
+
+            <input type="radio" value="mediumCrust" name="crustSize">
+            <label>12"</label>
+
+            <input type="radio" value="largeCrust" name="crustSize">
+            <label>14"</label>
+            <br>
+            <input type="radio" value="handTossed" name="crustStyle">
+            <label>Hand Tossed</label>
+            <br>
+            <input type="radio" value="chicagoStyle" name="crustStyle">
+            <label>Chicago Style</label>
+            <br>
+            <input type="radio" value="caliStyle" name="crustStyle">
+            <label>California Style</label>
+            <br>
+            <input type="radio" value="nycStyle" name="crustStyle">
+            <label>New York Style</label>
+        </div>
+
+        <div class="card">
+            <h3> Select Cheese</h3>
+            <input type="radio" value="lightCheese" name="cheesePortion">
+            <label>Light</label>
+
+            <input type="radio" value="mediumCheese" name="cheesePortion">
+            <label>Medium</label>
+
+            <input type="radio" value="heavyCheese" name="cheesePortion">
+            <label>Heavy</label>
+            <br>
+            <input type="radio" value="cheddar" name="cheeseChoice">
+            <label>Cheddar</label>
+            <br>
+            <input type="radio" value="smokedGouda" name="cheeseChoice">
+            <label>Smoked Gouda</label>
+            <br>
+            <input type="radio" value="provoloneCheese" name="cheeseChoice">
+            <label>Provolone Cheese</label>
+            <br>
+            <input type="radio" value="burrata" name="cheeseChoice">
+            <label>Burrata</label>
+            <br>
+            <input type="radio" value="mozzarella" name="cheeseChoice">
+            <label>Mozzarella</label>
+            <br>
+            <input type="radio" value="havarti" name="cheeseChoice">
+            <label>Havarti</label>
+        </div>
+
+        <div class="card">
+            <h3> Select Sauce</h3>
+            <input type="radio" value="lightSauce" name="saucePortion">
+            <label>Light</label>
+
+            <input type="radio" value="mediumSauce" name="saucePortion">
+            <label>Medium</label>
+
+            <input type="radio" value="heavySauce" name="saucePortion">
+            <label>Heavy</label>
+            <br>
+            <input type="radio" value="marinara" name="sauceChoice">
+            <label>Classic Marinara</label>
+            <br>
+            <input type="radio" value="bbq" name="sauceChoice">
+            <label>BBQ Sauce</label>
+            <br>
+            <input type="radio" value="alfredo" name="sauceChoice">
+            <label>Alfredo Sauce</label>
+            <br>
+            <input type="radio" value="ranch" name="sauceChoice">
+            <label>Ranch</label>
+            <br>
+            <input type="radio" value="garlic" name="sauceChoice">
+            <label>Garlic Sauce</label>
+            <br>
+            <input type="radio" value="hotSauce" name="sauceChoice">
+            <label>Hot Sauce</label>
+        </div>
+    </div>
+
+
+    <div id="pizza-container">
+        <img id="base" src="./img/base.png" alt="Pizza" />
+        <div class="card">
+            <h3>Meats</h3>
+            <input class="top" type="checkbox" id="input-roni">
+            <label for="input-roni"> Pepperoni</label><br>
+            <img id="img-roni" src="./img/pepperoni.png" alt="Pepperoni" />
+
+            <input class="top" type="checkbox" id="input-saus">
+            <label for="input-saus"> Sausage</label><br>
+            <img id="img-saus" src="./img/beef.png" alt="Sausage" />
+
+            <input class="top" type="checkbox" id="input-bacon">
+            <label for="input-bacon"> Bacon</label><br>
+            <img id="img-bacon" src="./img/bacon.png" alt="Bacon" />
+
+            <input class="top" type="checkbox" id="input-meatballs">
+            <label for="input-meatballs"> Meatballs</label><br>
+            <img id="img-meatballs" src="./img/meatballs.png" alt="Meatballs" />
+
+            <input class="top" type="checkbox" id="input-chicken">
+            <label for="input-chicken"> Chicken</label><br>
+            <img id="img-chicken" src="./img/chicken.png" alt="Chicken" />
+
+            <input class="top" type="checkbox" id="input-steak">
+            <label for="input-steak"> Steak</label><br>
+            <img id="img-steak" src="./img/steak.png" alt="Steak" />
+
+            <input class="top" type="checkbox" id="input-chicken">
+            <label for="input-chicken"> Chicken</label><br>
+            <img id="img-chicken" src="./img/chicken.png" alt="Chicken" />
+
+            <input class="top" type="checkbox" id="input-anchovies">
+            <label for="input-anchovies"> Anchovies</label><br>
+            <img id="img-anchovies" src="./img/anchovies.png" alt="Anchovies" />
+
+            <h3>Veggies</h3>
+            <input class="top" type="checkbox" id="input-pine">
+            <label for="input-pine"> Pineapple</label><br>
+            <img id="img-pine" src="./img/pineapples.png" alt="Pineapples" />
+
+            <input class="top" type="checkbox" id="input-tomatoes">
+            <label for="input-tomatoes"> Sun-Dried Tomatoes</label><br>
+            <img id="img-tomatoes" src="./img/tomatoes.png" alt="Sun Dried Tomatoes" />
+
+            <input class="top" type="checkbox" id="input-spinach">
+            <label for="input-spinach"> Spinach</label><br>
+            <img id="img-spinach" src="./img/spinach.png" alt="Spinach" />
+
+            <input class="top" type="checkbox" id="input-jalapeno">
+            <label for="input-jalapeno"> Jalapeno</label><br>
+            <img id="img-jalapeno" src="./img/jalapeno.png" alt="Jalapeno" />
+
+
+            <input class="top" type="checkbox" id="input-shroom">
+            <label for="input-shroom"> Mushrooms</label><br>
+            <img id="img-shroom" src="./img/mushrooms.png" alt="Mushrooms" />
+
+            <input class="top" type="checkbox" id="input-pepper">
+            <label for="input-peppers"> Green Peppers</label><br>
+            <img id="img-pepper" src="./img/peppers.png" alt="Green Peppers" />
+
+            <input class="top" type="checkbox" id="input-onion">
+            <label for="input-onion"> Onion</label><br>
+            <img id="img-onion" src="./img/onions.png" alt="Onions" />
+        </div>
+    </div>
+
+</body>
+
+</html>

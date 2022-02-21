@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+
+:root {
+	/* Set neon color */
+	--neon-text-color: #f40;
+	--neon-border-color: #08f;
+}
+
+body {
+	background-color: #00171F;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+
+.orderButton {
+	background-color: #DB9D47;
+	border: 2px;
+	color: white;
+	padding-left: 15px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.bannerButtons {
+	text-transform: uppercase;
+	background-color: #DB9D47;
+	font-size: 16px;
+	color: white;
+	border: none;
+	width: 200px;
+	height: 50px;
+	border: 10px;
+	cursor: pointer;
+	transition: transform 1s;
+}
+
+.bannerButtons:hover {
+	transform: scale(1.2);
+	background-color: #2274A5;
+}
+
+#neon {
+	font-family: 'Exo 2', sans-serif;
+	margin-top: 15vh;
+	height: 50px;
+	width: 225px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 70px;
+	font-weight: 200;
+	font-style: italic;
+	color: #fff;
+	padding: 4rem 6rem 5.5rem;
+	border: 0.4rem solid #fff;
+	border-radius: 2rem;
+	animation: flicker 3.5s infinite alternate;
+	transition: transform 4s;
+}
+
+#neon:hover {
+	transform: rotate(360deg);
+}
+
+@keyframes flicker {
+	0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+		text-shadow:
+			-0.2rem -0.2rem 1rem #fff,
+			0.2rem 0.2rem 1rem #fff,
+			0 0 2rem var(--neon-text-color),
+			0 0 4rem var(--neon-text-color),
+			0 0 6rem var(--neon-text-color),
+			0 0 8rem var(--neon-text-color),
+			0 0 10rem var(--neon-text-color);
+		box-shadow:
+			0 0 .5rem #fff,
+			inset 0 0 .5rem #fff,
+			0 0 2rem var(--neon-border-color),
+			inset 0 0 2rem var(--neon-border-color),
+			0 0 4rem var(--neon-border-color),
+			inset 0 0 4rem var(--neon-border-color);
+	}
+
+	20%, 24%, 55% {
+		text-shadow: none;
+		box-shadow: none;
+	}
+}
+
+#custom-container {
+	display: flex;
+	flex: row;
+	justify-content: space-around;
+	width: 100vw;
+	margin-top: 5vh;
+}
+
+#combos {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 5vh;
+}
+
+#combos img {
+	width: 18vw;
+	height: 23vh;
+	border-radius: 5px 5px 0 0;
+}
+
+.comboGrow {
+	transition: transform 1s;
+}
+
+.comboGrow:hover {
+	transform: scale(1.3);
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 #DB9D47;
+	border-radius: 5px;
+	width: 20vw;
+	background-color: #2274A5;
+	padding-left: 8px;
+	transition: box-shadow 0.5s;
+}
+
+.card:hover {
+	box-shadow: 0 8px 32px 0 #DB9D47;
+}
+
+.ticker {
+	text-align: right;
+	margin-top: 15vh;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-name: ticker;
+	animation-duration: 20s;
+}
+
+@keyframes ticker {
+	0% {transform: translate3d(0, 0, 0);}
+	100% {transform: translate3d(-100%, 0, 0);}
+}
